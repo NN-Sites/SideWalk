@@ -1,0 +1,83 @@
+    @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+:root {
+    --primary: #ED7738;
+    --glass: rgba(0, 0, 0, 0.75);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#ui-overlay {
+    position: fixed;
+    top: 20px;
+    width: 90%;
+    left: 5%;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.search-bar {
+    background: var(--glass);
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    text-align: right;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:active { transform: scale(0.95); }
+
+#status-indicator {
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+
+/* עיצוב כפתור ה-AR המובנה של Three.js */
+#ARButton {
+    bottom: 40px !important;
+    background: var(--primary) !important;
+    border-radius: 30px !important;
+    font-family: 'Assistant' !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sidewalk AR Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="ui-overlay">
+        <div class="search-bar">
+            <input type="text" id="dest-input" placeholder="לאן ננווט היום?">
+            <button id="start-btn">חשב מסלול</button>
+        </div>
+        <div id="status-indicator">מחפש רצפה... כוון את המצלמה למטה</div>
+    </div>
+
+    <div id="ar-controls"></div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
